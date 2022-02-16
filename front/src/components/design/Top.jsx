@@ -3,11 +3,18 @@ import React from 'react'
 function Top() {
   return (
     <nav className='TopBar'>
-      <header><h1></h1></header>
-       <span>1</span>
-       <span>2</span>
-       <span>3</span>
-       <span>4</span>
+      <a href='#'>
+        <img src="https://kojkkojk.github.io/hamoonrang/dccon/images/1.png" alt=""/>
+      </a>
+      <span className='menus'>
+        <ul>
+          <li>집</li>
+          <li>함께하기</li>
+          <li>더보기</li>
+          <li>더보기</li>
+          <li>더보기</li>
+        </ul>
+      </span>
     </nav>
   )
 }
