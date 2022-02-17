@@ -9,22 +9,58 @@
    padding: 0%;
    box-sizing: border-box;
 }
+.callMenu{
+   position: absolute;
+   z-index: 10020;
+   top: 0;
+   right: 0;
+   width: 30px;
+   height: 30px;
+   background-color: aqua;
+   font-size: smaller;
+}
 .TopBar{
-   padding: 8px 15px;
-   font-family: 'Pretendard-Regular';
    width: 100%;
-   height: 75px;
+   height: 105px;
+   position: fixed;
+   padding: 8px 18px;
+   font-family: 'Pretendard-Regular';
    display: flex;
-   justify-content: space-between;
+   flex-direction: column;
    font-weight: 700;
+   z-index: 10000;
+   top: 0;
+   background-color: lavender;
+   transition: 0.5s ease;
+}
+.TopBar2{
+   width: 100%;
+   height: 0;
+   position: fixed;
+   padding: 8px 18px;
+   font-family: 'Pretendard-Regular';
+   display: flex;
+   flex-direction: column;
+   font-weight: 700;
+   transition: 0.5s ease;
+   z-index: 10000;
+}
+.TopBar2>*{
+   display: none;
 }
 .TopBar>a{
    display: flex;
    justify-content: center;
    align-items: center;
+   height: 50%;
+}
+.TopBar>a>img{
+   width: 100%;
+   height: 100%;
 }
 .menus{   
-   width: 55%;
+   width: 100%;
+   height: 50%;
 }
 .menus>ul{
    display: flex;
@@ -33,8 +69,11 @@
    list-style: none;
 }
 .menus>ul>li{
-   width: 20%;
+   width: 25%;
    display: flex;
    justify-content: center;
    align-items: center;
+}
+.App{
+   padding: 5px 15px;
 }

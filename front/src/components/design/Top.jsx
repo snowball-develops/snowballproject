@@ -1,18 +1,14 @@
 import React from 'react'
 
-function Top() {
+function Top(props) {
   return (
-    <nav className='TopBar'>
-      <a href='#'>
-        <img src="https://kojkkojk.github.io/hamoonrang/dccon/images/1.png" alt=""/>
-      </a>
+    <nav className={props.classed}>
       <span className='menus'>
         <ul>
-          <li>집</li>
-          <li>함께하기</li>
-          <li>더보기</li>
-          <li>더보기</li>
-          <li>더보기</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Join Us</a></li>
+          <li><a href="/">More</a></li>
+          <li><a href="/">More</a></li>
         </ul>
       </span>
     </nav>
