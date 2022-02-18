@@ -77,3 +77,21 @@
 .App{
    padding: 5px 15px;
 }
+.toTop{
+   display: none;
+}
+.toTop2{
+   cursor: pointer;
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   bottom: 6px;
+   right: 6px;
+   width: 35px;
+   height: 35px;
+   background-color: gold;
+   font-size: x-large;
+   border-radius: 50%;
+   color: white;
+}
